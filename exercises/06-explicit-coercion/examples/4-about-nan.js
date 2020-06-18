@@ -10,8 +10,8 @@ console.log('--- NaN does not equal NaN! ');
 const isTrue = NaN !== NaN;
 console.assert(isTrue, 'NaN is not equal to NaN');
 
-const isFalse = NaN === NaN;
-console.assert(isFalse, 'NaN is equal to NaN');
+//const isFalse = NaN === NaN;
+// console.assert(isFalse, 'NaN is equal to NaN');
 
 
 console.log('--- Number.isNaN(x) returns true if a value is NaN ');
