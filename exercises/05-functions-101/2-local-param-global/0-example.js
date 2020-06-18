@@ -1,5 +1,4 @@
 'use strict';
-
 /* to understand function scope, you need to ask one simple question:
 
   - How did this variable get it's value?
