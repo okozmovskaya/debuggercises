@@ -3,7 +3,12 @@
 // write a function that behaves the same as !
 //  ... but doesn't use !
 function not(value) {
-
+    const noty = Boolean(value);
+    if (noty === true) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 const _1_expect = true;

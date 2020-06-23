@@ -4,6 +4,13 @@
 //  ... without using ? :
 function ternary(condition, first, second) {
 
+    const compare = Boolean(condition);
+    if (compare === true) {
+        return first;
+    } else {
+        return second;
+    }
+
 }
 
 const ternary1 = ternary(1, 'A', 'B');
