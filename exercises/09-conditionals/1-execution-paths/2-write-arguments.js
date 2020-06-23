@@ -18,20 +18,20 @@ function mystery(a, b) {
 
 // path 1
 const _1_expect = 'path 1';
-const _1_actual = mystery(0, null);
+const _1_actual = mystery(0, 12);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(false, 'hello');
+const _2_actual = mystery(0, 1);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 // path 2
 const _3_expect = 'path 2';
-const _3_actual = mystery(true, undefined);
+const _3_actual = mystery(0, 'hello');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'path 2';
-const _4_actual = mystery(1, -1);
+const _4_actual = mystery(1, 'a');
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 // path 3
@@ -45,7 +45,7 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 4
 const _7_expect = 'path 4';
-const _7_actual = mystery(0, 12);
+const _7_actual = mystery('abc', 12);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 4';
